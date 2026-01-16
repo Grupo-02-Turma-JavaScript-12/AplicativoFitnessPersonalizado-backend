@@ -127,12 +127,12 @@ $ npm run start:prod
 
 ## Autores do Projeto
 
-- [Allyson Gonçalves](https://twitter.com/kammysliwiec)
-- [Alexandre Julio](https://twitter.com/kammysliwiec)
-- [Juliermes Mendes](https://twitter.com/kammysliwiec)
-- [Marcos Ribeiro](https://twitter.com/kammysliwiec)
-- [Matheus Carvalho](https://twitter.com/kammysliwiec)
-- [Matheus Lins](https://twitter.com/kammysliwiec)
+- [Allyson Gonçalves](https://github.com/allysonaggp)
+- [Alexandre Julio](https://github.com/AlexandreJulioDev)
+- [Juliermes Mendes](https://github.com/juliomendes160)
+- [Marcos Ribeiro](https://github.com/Marcsfic98)
+- [Matheus Carvalho](https://github.com/mc4rvalho)
+- [Matheus Lins](https://github.com/Matheus-Lins)
 
 ## Licença
 
