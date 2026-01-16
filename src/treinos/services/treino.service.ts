@@ -38,8 +38,8 @@ export class TreinoService {
   }
 
   async update(treino: Treino): Promise<Treino> {
-    const onTreino = await this.findById(treino.id);
-    return await this.treinoRepository.save(onTreino);
+    await this.findById(treino.id);
+    return await this.treinoRepository.save(treino);
   }
 
   async delete(id: number): Promise<DeleteResult> {
