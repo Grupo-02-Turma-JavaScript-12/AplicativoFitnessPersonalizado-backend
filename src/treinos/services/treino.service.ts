@@ -1,24 +1,36 @@
 import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
-import { DeleteResult, Repository } from 'typeorm';
+import { DeleteResult, Repository, ILike } from 'typeorm';
+import { Treino } from '../entities/treino.entity';
+import { InjectRepository } from '@nestjs/typeorm';
 
 @Injectable()
 export class TreinoService {
-  constructor(private treinoRepository: Repository<Treino>) {}
+  constructor(
+    @InjectRepository(Treino) private treinoRepository: Repository<Treino>,
+  ) {}
 
   async findAll(): Promise<Treino[]> {
-    return await this.temaRepository.find();
+    return await this.treinoRepository.find();
   }
 
   async findById(id: number): Promise<Treino> {
-    const treino = await this.temaRepository.findOne({
+    const treino = await this.treinoRepository.findOne({
       where: { id },
     });
 
     if (!treino) {
-      throw new HttpException('Tema not found', HttpStatus.NOT_FOUND);
+      throw new HttpException('treino nao encontado', HttpStatus.NOT_FOUND);
     }
 
     return treino;
+  }
+
+  async findAllbyName(name: string): Promise<Treino[]> {
+    return await this.treinoRepository.find({
+      where: {
+        name: ILike(`%${name}%`),
+      },
+    });
   }
 
   async create(treino: Treino): Promise<Treino> {
@@ -26,8 +38,8 @@ export class TreinoService {
   }
 
   async update(treino: Treino): Promise<Treino> {
-    const treino = await this.findById(treino.id);
-    return await this.treinoRepository.save(treino);
+    const onTreino = await this.findById(treino.id);
+    return await this.treinoRepository.save(onTreino);
   }
 
   async delete(id: number): Promise<DeleteResult> {
