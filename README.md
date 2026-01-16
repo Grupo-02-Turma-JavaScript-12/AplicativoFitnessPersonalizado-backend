@@ -29,8 +29,9 @@
 <li>Cada treino pode ser configurado com atributos como Nome, Nível, Duração, Tipo e Descrição.</li>
 <li>Flexibilidade para que profissionais adaptem treinos conforme evolução dos alunos.</li>
 </ul>
+
 ## Entidade e Atributos da Entidade
-<h3></h3>
+
 <P>Tendo como principal entidade Treino, mapeada para a tabela tb_treino.</P>
 <table border="1" cellpadding="8" cellspacing="0">
   <thead>
@@ -80,6 +81,29 @@
     </tr>
   </tbody>
 </table>
+
+## Testes Realizados no Insomnia
+
+<h3>Consultar todos os Treinos</h3>
+<img width="1280" height="678" alt="image" src="https://github.com/user-attachments/assets/6c78a195-3b06-4882-8f62-bb82634ace69" />
+<h3>Consultar Treinos por ID</h3>
+<img width="1282" height="675" alt="image" src="https://github.com/user-attachments/assets/2ce863e7-d414-4692-9e34-179a5415fdfc" />
+<h3>Consultar Treinos por nome</h3>
+<img width="1281" height="674" alt="image" src="https://github.com/user-attachments/assets/9e92798c-766a-4b7e-8073-b32b74a512dd" />
+
+<h3>Cadastrar Treino</h3>
+<img width="1282" height="675" alt="image" src="https://github.com/user-attachments/assets/016af3f0-48e8-4da1-8e2d-431b6d183f5c" />
+
+<h3>Atualizar Treino</h3>
+<img width="1281" height="676" alt="image" src="https://github.com/user-attachments/assets/2b09d81b-5167-4092-8d52-69f94262563f" />
+
+<h3>Listar todos os Treinos</h3>
+<img width="1280" height="673" alt="image" src="https://github.com/user-attachments/assets/774d1e2f-6095-4810-bace-f1276e175af1" />
+
+<h3>Deletar Treino</h3>
+<img width="1281" height="674" alt="image" src="https://github.com/user-attachments/assets/95ef9980-d9be-4fd8-af50-c07305adf6a1" />
+
+
 
 
 ## Instalação do Projeto
