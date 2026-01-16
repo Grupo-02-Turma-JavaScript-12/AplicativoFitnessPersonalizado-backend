@@ -1,4 +1,6 @@
-<img src="assets/MoveUp.png" width="120" alt="MoveUP Logo" />
+<p align="center">
+<img alig src="https://raw.githubusercontent.com/Grupo-02-Turma-JavaScript-12/AplicativoFitnessPersonalizado-backend/refs/heads/main/src/assets/MoveUp.png" width="300" alt="MoveUP Logo" />
+</p>
 
 <p>O MoveUP é um back-end robusto e escalável desenvolvido para dar suporte a um aplicativo fitness. Ele foi projetado para atender profissionais de educação física que precisam gerenciar treinos e acompanhar a evolução dos seus alunos de forma prática e segura.</p>
 
