@@ -21,11 +21,11 @@ export class TreinoService {
     return treino;
   }
 
-  async create(treino: treino): Promise<Treino> {
+  async create(treino: Treino): Promise<Treino> {
     return await this.treinoRepository.save(treino);
   }
 
-  async update(treino: treino): Promise<Treino> {
+  async update(treino: Treino): Promise<Treino> {
     const treino = await this.findById(treino.id);
     return await this.treinoRepository.save(treino);
   }
