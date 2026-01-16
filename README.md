@@ -6,8 +6,8 @@
 
 ## Principais Características
 
-<p>API REST completo:</p>
 
+<h3>API REST completo:</h3>
 <ul>
 <li>FindAll() → retorna todos os treinos cadastrados</li>
 <li>FindById(id) → busca treino específico com validação de existência</li>
@@ -16,19 +16,18 @@
 <li>Update(treino) → atualiza treinos existentes com verificação prévia</li>
 <li>Delete(id) → remove treinos com validação de integridade</li>
 </ul>
-<p>Escalabilidade e Organização:</p>
-
+<h3>Escalabilidade e Organização:</h3>
 <ul>
 <li>Arquitetura modular do NestJS, facilitando expansão futura (ex.: entidade Aluno, Avaliação Física).</li>
 <li>Repositórios do TypeORM para abstração de banco de dados e consultas otimizadas.</li>
 </ul>
-
-<p>Personalização:</p>
-
+<h3>Personalização:</h3>
 <ul>
 <li>Cada treino pode ser configurado com atributos como Nome, Nível, Duração, Tipo e Descrição.</li>
 <li>Flexibilidade para que profissionais adaptem treinos conforme evolução dos alunos.</li>
 </ul>
+
+<br>
 
 ## Entidade e Atributos da Entidade
 
