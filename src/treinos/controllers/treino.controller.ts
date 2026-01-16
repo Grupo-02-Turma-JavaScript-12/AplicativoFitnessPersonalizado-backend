@@ -15,41 +15,41 @@ import { Treino } from '../entities/treino.entity';
 
 @Controller('/treinos')
 export class TreinoController {
-  constructor(private readonly postagemService: TreinoService) {}
+  constructor(private readonly treinoService: TreinoService) {}
 
   @Get()
   @HttpCode(HttpStatus.OK)
   findAll(): Promise<Treino[]> {
-    return this.postagemService.findAll();
+    return this.treinoService.findAll();
   }
 
   @Get('/:id')
   @HttpCode(HttpStatus.OK)
   findById(@Param('id', ParseIntPipe) id: number): Promise<Treino> {
-    return this.postagemService.findById(id);
+    return this.treinoService.findById(id);
   }
 
   @Get('/treino/:name')
   @HttpCode(HttpStatus.OK)
   findAllbyName(@Param('name') name: string): Promise<Treino[]> {
-    return this.postagemService.findAllbyName(name);
+    return this.treinoService.findAllbyName(name);
   }
 
   @Post()
   @HttpCode(HttpStatus.CREATED)
   create(@Body() treino: Treino): Promise<Treino> {
-    return this.postagemService.create(treino);
+    return this.treinoService.create(treino);
   }
 
   @Put()
   @HttpCode(HttpStatus.OK)
   update(@Body() treino: Treino): Promise<Treino> {
-    return this.postagemService.update(treino);
+    return this.treinoService.update(treino);
   }
 
   @Delete('/:id')
   @HttpCode(HttpStatus.NO_CONTENT)
   delete(@Param('id', ParseIntPipe) id: number) {
-    return this.postagemService.delete(id);
+    return this.treinoService.delete(id);
   }
 }
